@@ -6,7 +6,7 @@ import lombok.*;
 @NoArgsConstructor
 @Entity(name = "users")
 @Getter
-public class Board {
+public class BoardEntity {
     //글 고유 아이디
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +18,7 @@ public class Board {
     //비밀번호
     private String password;
 
-    public Board(BoardRequestDto requestDto){
+    public BoardEntity(BoardRequestDto requestDto){
         this.title = requestDto.getTitle();
         this.content = requestDto.getContent();
      }

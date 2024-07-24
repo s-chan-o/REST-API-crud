@@ -1,7 +1,7 @@
 package com.example.board_crud.crud.Dto;
 
 
-import com.example.board_crud.crud.entity.Board;
+import com.example.board_crud.crud.entity.BoardEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -15,7 +15,7 @@ public class BoardResponseDto {
     private LocalDateTime createdAt;
     private LocalDateTime modifiedAt;
 
-    public BoardResponseDto(Board board){
+    public BoardResponseDto(BoardEntity board){
         this.title = board.getTitle();
         this.content = board.getContent();
     }

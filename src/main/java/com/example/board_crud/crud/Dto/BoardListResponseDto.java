@@ -1,6 +1,6 @@
 package com.example.board_crud.crud.Dto;
 
-import com.example.board_crud.crud.entity.Board;
+import com.example.board_crud.crud.entity.BoardEntity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,10 +19,10 @@ public class BoardListResponseDto {
     private LocalDateTime createdAt;
     private LocalDateTime modifiedAt;
     //Entity -> dto
-    public BoardListResponseDto(Board board){
+    public BoardListResponseDto(BoardEntity board){
         this.title = board.getTitle();
     }
-    public BoardListResponseDto(Optional<Board> board){
+    public BoardListResponseDto(Optional<BoardEntity> board){
         this.title = board.get().getTitle();
     }
 }
