@@ -16,13 +16,14 @@ public class BoardListResponseDto {
     private String title;
     //작성자명
     private String username;
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
+    private String content;
     //Entity -> dto
     public BoardListResponseDto(Board board){
         this.title = board.getTitle();
+        this.content = board.getContent();
     }
     public BoardListResponseDto(Optional<Board> board){
         this.title = board.get().getTitle();
+        this.content = board.get().getContent();
     }
 }
