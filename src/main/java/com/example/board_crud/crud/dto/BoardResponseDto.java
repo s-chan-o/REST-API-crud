@@ -1,4 +1,4 @@
-package com.example.board_crud.crud.Dto;
+package com.example.board_crud.crud.dto;
 
 
 import com.example.board_crud.crud.entity.Board;

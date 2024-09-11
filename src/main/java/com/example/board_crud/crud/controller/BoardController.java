@@ -1,8 +1,8 @@
 package com.example.board_crud.crud.controller;
 
-import com.example.board_crud.crud.Dto.BoardListResponseDto;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
-import com.example.board_crud.crud.Dto.BoardResponseDto;
+import com.example.board_crud.crud.dto.BoardListResponseDto;
+import com.example.board_crud.crud.dto.BoardRequestDto;
+import com.example.board_crud.crud.dto.BoardResponseDto;
 import com.example.board_crud.crud.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

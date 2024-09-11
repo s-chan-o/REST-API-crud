@@ -1,4 +1,4 @@
-package com.example.board_crud.crud.Dto;
+package com.example.board_crud.crud.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,8 +1,8 @@
 package com.example.board_crud.crud.service;
 
-import com.example.board_crud.crud.Dto.BoardListResponseDto;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
-import com.example.board_crud.crud.Dto.BoardResponseDto;
+import com.example.board_crud.crud.dto.BoardListResponseDto;
+import com.example.board_crud.crud.dto.BoardRequestDto;
+import com.example.board_crud.crud.dto.BoardResponseDto;
 import com.example.board_crud.crud.entity.Board;
 import com.example.board_crud.crud.repository.BoardRepository;
 import jakarta.transaction.Transactional;

@@ -1,5 +1,5 @@
 package com.example.board_crud.crud.entity;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
+import com.example.board_crud.crud.dto.BoardRequestDto;
 import jakarta.persistence.*;
 import lombok.*;
 
