@@ -18,12 +18,16 @@ public class BoardService {
 
     private final BoardRepository boardRepository;
     //글 생성
+
+    @Transactional
     public BoardResponseDto createBoard(BoardRequestDto requestDto){
         Board board = new Board(requestDto);
         boardRepository.save(board);
         return new BoardResponseDto(board);
     }
     //모든 글 가져오기
+
+    @Transactional
     public List<BoardListResponseDto> findAllBoard(){
         try{
             List<Board> boardList = boardRepository.findAll();
@@ -40,6 +44,8 @@ public class BoardService {
         return null;
     }
     //글 하나 가져오기
+
+    @Transactional
     public BoardResponseDto findOneBoard(Long id){
         Board board = boardRepository.findById(id).orElseThrow(
                 () -> new IllegalArgumentException("조회 실패")
